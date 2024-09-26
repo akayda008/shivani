@@ -1,4 +1,22 @@
+footer{
+    display: flex;
+}
+
 footer div{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+
+footer div ul{
+    list-style: none;
+    color: white;
+}
+
+footer div ul li{
+    list-style: none;
+    color: white;
+}
+
+footer div ul li a{
+    color:white;
 }

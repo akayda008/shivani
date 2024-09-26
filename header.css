@@ -1,4 +1,21 @@
+header{
+    display: flex;
+}
+
 header div{
-    position: relative;
-    width: 100%;
+    left:100px;
+}
+
+header div ul{
+    list-style: none;
+    color: white;
+}
+
+header div ul li{
+    list-style: none;
+    color: white;
+}
+
+header div ul li a{
+    color:white;
 }
