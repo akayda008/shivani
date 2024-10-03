@@ -22,52 +22,47 @@
     background-repeat: no-repeat;
 }
 
-#project1hero{
+#project3{
+    background-color: white;
+}
+
+#project1hero, #project2hero, #project3hero{
+    position: relative;
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#project1hero {
     background-image: url("images/colours/heroimage.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
-#project2hero{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    width: 100%;
-    height: 100vh;
+#project2hero {
     background-image: url("images/headphones/heroimage.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
-#project3hero{
+#project3hero {
+    background-image: url("images/cupholder/heroimage.jpg");
+}
+
+.projectcontent a{
     display: flex;
     justify-content: center;
     align-self: center;
+    position: relative;
+    z-index: 2;
     width: 100%;
-    height: 100vh;
-    background-image: url("images/cupholder/heroimage.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    height: auto;
 }
 
-.projectcontent{
-    display: flex;
-    justify-content: center;
-    align-self:center;
-}
-
-.projectcontent img{
+.projectcontent img {
     width: 60%;
     height: auto;
     border-radius: 10px;
@@ -76,4 +71,69 @@
 
 .projectcontent img:hover{
     transform: scale(1.25);
+}
+
+#about-message {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    width: 100%;
+    text-align: center;
+}
+
+#about, #message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%; 
+    min-width: 300px; 
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+#about img, #message img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+button {
+    background-color: #45c4b1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px; 
+    font-size: 16px; 
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #36a293; /* Darker background on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Ensure link inside button doesn't inherit other link styles */
+button a {
+    color: white; /* Override any header link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+}
+
+button a:hover {
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* Reset any conflicting styles applied to buttons globally or from the header */
+#about-message button,
+#about-message button a {
+    font-family: inherit; /* Ensure buttons inherit the site's default font */
+    font-size: inherit; /* Ensure they use the same font size */
+    color: inherit; /* Override global link colors */
+    text-align: center; /* Ensure text aligns correctly */
 }
