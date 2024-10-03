@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="contact.css"> <!-- Link to new CSS for contact page -->
 </head>
 <body>
     <header>
         <div id="logo">
             <a href="index.html">
-                <img src="images/logo.png" width="40px" height="40px">
+                <img src="images/logo.png" width="40px" height="40px" alt="Logo">
             </a>
         </div>
         <div id="navigation">
@@ -32,21 +33,41 @@
             </ul>
         </div>
     </header>
-    <section id="contact">
-        
-    </section>
-    <section id="review">
+    
+    <div id="contact-review">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="occupation" placeholder="Occupation/Job Title" required>
+                <input type="text" id="company" placeholder="Company" required>
+                <textarea id="productRequirement" placeholder="Product Requirement" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
 
-    </section>
+        <div class="review-container">
+            <h2>Leave a Review</h2>
+            <form id="reviewForm">
+                <input type="text" id="reviewName" placeholder="Your Name" required>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="text" id="productReceived" placeholder="Product Received" required>
+                <textarea id="prodcutReview" placeholder="Review" rows="4" required></textarea>
+                <input type="number" id="rating" placeholder="Rating (out of 5)" min="1" max="5" required>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </div>
+
     <footer>
         <div id="links">
             <div id="phone">
-                Phone:
-                <a href="tel:+919032600370">+91 9032600370</a>
+                Phone: <a href="tel:+919032600370">+91 9032600370</a>
             </div>
             <div id="email">
-                Email:
-                <a href="mailto:gshivani00004@gmail.com">gshivani00004@gmail.com</a>
+                Email: <a href="mailto:gshivani00004@gmail.com">gshivani00004@gmail.com</a>
             </div>
             <div id="connect">
                 <p>Connect with me:<br>
@@ -61,7 +82,7 @@
                             <img src="images/whatsapp.png" alt="whatsapp" width="30px" height="30px">
                         </a>
                     </span>
-            </p>
+                </p>
             </div>
             <div id="contact">
                 <p>
