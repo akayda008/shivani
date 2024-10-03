@@ -1,0 +1,61 @@
+#display {
+    display: flex;
+    flex-direction: column;  /* Display projects in a column */
+    align-items: center;  /* Center the project containers */
+    gap: 30px;
+    margin: 20px;
+}
+
+.projectcontainer {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 20px;  /* Space between image and info */
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 0 auto;  /* Center the project container */
+}
+
+.projectcontent {
+    display: flex;
+    align-items: center;
+    gap: 20px;  /* Space between image and text */
+}
+
+.projectcontent img {
+    width: 30%;  /* Image on the left */
+    height: auto;
+    border-radius: 10px;
+}
+
+.projectinfo {
+    flex-grow: 1;  /* The text takes up remaining space */
+}
+
+.projectinfo h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.projectinfo p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.projectinfo a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.projectinfo a:hover {
+    color:#13678A;
+    text-decoration: underline;
+}
+
+.projectcontainer:hover {
+    transform: scale(1.05);  /* Slight hover effect on the entire container */
+}
