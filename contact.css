@@ -9,7 +9,7 @@
 /* Style for the contact form */
 .contact-container, .review-container {
     width: 50%;  /* Each section takes up 50% width */
-    background-color: #45C4B0;  /* Lighter background */
+    background-color: white;  /* Lighter background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
@@ -33,6 +33,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    padding: 15px;
 }
 
 button:hover {

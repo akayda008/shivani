@@ -1,0 +1,70 @@
+.about-container {
+    max-width: 1200px;  /* Maximum width for the container */
+    margin: 40px auto;  /* Center the container */
+    padding: 20px;
+}
+
+/* Style for the introduction section */
+.intro-section {
+    display: flex;  /* Flexbox layout for the profile picture and text */
+    align-items: flex-end;  /* Align items at the bottom */
+    margin-bottom: 30px;  /* Space below the intro section */
+}
+
+.profile-pic {
+    flex: 0 0 150px;  /* Fixed width for profile picture */
+    height: 150px;  /* Fixed height for profile picture */
+    border-radius: 50%;  /* Make the image circular */
+    overflow: hidden;  /* Ensure overflow is hidden */
+    margin-right: 20px;  /* Space between picture and text */
+}
+
+.profile-pic img {
+    width: 100%;  /* Full width */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.intro-text {
+    flex-grow: 1;  /* Allow the text to take the remaining space */
+    text-align: left;  /* Align text to the left */
+}
+
+/* Style for projects section */
+.projects-section, .goals-section {
+    background-color: white;  /* Lighter background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;  /* Space between sections */
+}
+
+h2 {
+    margin-bottom: 15px;  /* Spacing below section headings */
+}
+
+.projects-section ul {
+    list-style-type: none;  /* Remove bullets from the list */
+    padding: 0;  /* Remove default padding */
+}
+
+.projects-section li {
+    margin-bottom: 10px;  /* Space between list items */
+}
+
+button {
+    width: 50%;  /* Button takes up half the container width */
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;  /* Darker button background on hover */
+}
+
+p {
+    margin-top: 20px;
+    color: #000;  /* Text color for any paragraph */
+}
