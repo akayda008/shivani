@@ -7,69 +7,19 @@
     <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="typography.css">
     <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <a href="index.html">
-                <img src="images/logo.png" width="40px" height="40px">
-            </a>
-        </div>
-        <div id="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div id="registration">
-            <ul>
-                <li><a href="registration.html">Sign up</a></li>
-                <li><a href="login.html">Log in</a></li>
-            </ul>
-        </div>
-    </header>
-    some shit
-    <footer>
-        <div id="links">
-            <div id="phone">
-                Phone:
-                <a href="tel:+919032600370">+91 9032600370</a>
-            </div>
-            <div id="email">
-                Email:
-                <a href="mailto:gshivani00004@gmail.com">gshivani00004@gmail.com</a>
-            </div>
-            <div id="connect">
-                <p>Connect with me:<br>
-                    <span class="social">
-                        <a href="https://linkedin.com">
-                            <img src="images/linkedin.png" alt="linkedin" width="30px" height="30px">
-                        </a>
-                        <a href="https://instagram.com/g.shivani04">
-                            <img src="images/insta.png" alt="instagram" width="30px" height="30px">
-                        </a>
-                        <a href="https://wa.me/+919032600370">
-                            <img src="images/whatsapp.png" alt="whatsapp" width="30px" height="30px">
-                        </a>
-                    </span>
-            </p>
-            </div>
-            <div id="contact">
-                <p>
-                    Leave a message here:<br>
-                    <a href="contact.html">
-                        <i style="font-size: large;">HERE</i>
-                    </a>
-                </p>
-            </div>
-        </div>
-        <div id="copyright">
-            &copy; G.Shivani
-        </div>
-    </footer>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="loginUsername" placeholder="Username" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="welcomeMessage"></p>
+        <p>Don't have an account? <a href="registration.html">Register here</a></p> <!-- Link to registration page -->
+    </div>
+    <script src="signup.js"></script>
 </body>
 </html>
