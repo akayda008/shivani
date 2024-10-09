@@ -46,14 +46,14 @@ $conn->close();
 <body>
     <div class="container">
         <h2>Login</h2>
-        <form id="loginForm" action="https://9c3d-171-48-99-141.ngrok-free.app/login.php" method="POST">
+        <form id="loginForm" action="login.php" method="POST">
             <input type="text" id="loginUsername" name="username" placeholder="Username" required>
             <input type="password" id="loginPassword" name="password" placeholder="Password" required>
             <button type="submit">Login</button>
         </form>
 
         <p id="welcomeMessage"></p>
-        <p>Don't have an account? <a href="https://9c3d-171-48-99-141.ngrok-free.app/registration.php">Register here</a></p> <!-- Link to registration page -->
+        <p>Don't have an account? <a href="registration.php">Register here</a></p> <!-- Link to registration page -->
     </div>
     <script src="signup.js"></script>
 </body>
