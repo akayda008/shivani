@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($sql) === TRUE) {
         echo "Registration successful!";
-        header("Location: login.php"); // Redirect to login page
+        header("Location: https://775b-103-105-225-66.ngrok-free.app/shivani/login.php"); // Redirect to login page
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
@@ -43,7 +43,7 @@ $conn->close();
 <body>
     <div class="container">
         <h2>Register</h2>
-        <form id="registerForm" action="register.php" method="POST">
+        <form id="registerForm" action="https://775b-103-105-225-66.ngrok-free.app/shivani/registration.php" method="POST">
             <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
             <input type="text" id="username" name="username" placeholder="Username" required>
             <input type="email" id="email" name="email" placeholder="Email" required>
@@ -59,8 +59,7 @@ $conn->close();
             </select>
             <button type="submit">Register</button>
         </form>
-        <p>Already have an account? <a href="login.php">Log In</a></p>
+        <p>Already have an account? <a href="https://775b-103-105-225-66.ngrok-free.app/shivani/login.php">Log In</a></p>
     </div>
-    <script src="signup.js"></script>
 </body>
 </html>

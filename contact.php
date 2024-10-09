@@ -77,13 +77,13 @@ $conn->close();
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="https://775b-103-105-225-66.ngrok-free.app/shivani/contact.php">Contact</a></li>
             </ul>
         </div>
         <div id="registration">
             <ul>
-                <li><a href="registration.php">Sign up</a></li>
-                <li><a href="login.php">Log in</a></li>
+                <li><a href="https://775b-103-105-225-66.ngrok-free.app/shivani/registration.php">Sign up</a></li>
+                <li><a href="https://775b-103-105-225-66.ngrok-free.app/shivani/login.php">Log in</a></li>
             </ul>
         </div>
     </header>
@@ -91,7 +91,7 @@ $conn->close();
     <div id="contact-review">
         <div class="contact-container">
             <h2>Contact Us</h2>
-            <form id="contactForm" action="contact.php" method="POST">
+            <form id="contactForm" action="https://775b-103-105-225-66.ngrok-free.app/shivani/contact.php" method="POST">
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
                 <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
                 <input type="email" id="email" name="email" placeholder="Email" required>
@@ -104,7 +104,7 @@ $conn->close();
 
         <div class="review-container">
             <h2>Leave a Review</h2>
-            <form id="reviewForm" action="contact.php" method="POST">
+            <form id="reviewForm" action="https://775b-103-105-225-66.ngrok-free.app/shivani/contact.php" method="POST">
                 <input type="text" id="reviewName" name="reviewName" placeholder="Your Name" required>
                 <input type="text" id="username" name="username" placeholder="Username" required>
                 <input type="text" id="productReceived" name="productReceived" placeholder="Product Received" required>
@@ -140,7 +140,7 @@ $conn->close();
             <div id="contact">
                 <p>
                     Leave a message here:<br>
-                    <a href="contact.php">
+                    <a href="https://775b-103-105-225-66.ngrok-free.app/shivani/contact.php">
                         <i style="font-size: large;">HERE</i>
                     </a>
                 </p>
