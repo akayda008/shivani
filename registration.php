@@ -43,7 +43,7 @@ $conn->close();
 <body>
     <div class="container">
         <h2>Register</h2>
-        <form id="registerForm" action="register.php" method="POST">
+        <form id="registerForm" action="https://9c3d-171-48-99-141.ngrok-free.app/register.php" method="POST">
             <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
             <input type="text" id="username" name="username" placeholder="Username" required>
             <input type="email" id="email" name="email" placeholder="Email" required>
@@ -59,7 +59,7 @@ $conn->close();
             </select>
             <button type="submit">Register</button>
         </form>
-        <p>Already have an account? <a href="login.php">Log In</a></p>
+        <p>Already have an account? <a href="https://9c3d-171-48-99-141.ngrok-free.app/login.php">Log In</a></p>
     </div>
     <script src="signup.js"></script>
 </body>
