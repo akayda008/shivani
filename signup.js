@@ -36,7 +36,7 @@ function registerUser(event) {
 
         localStorage.setItem('users', JSON.stringify(users)); // Save the updated array back to localStorage
         alert('Registration successful!');
-        window.location.href = 'https://d92a-111-93-136-226.ngrok-free.app/login.php'; // Redirect to login page after registration
+        window.location.href = 'https://9c3d-171-48-99-141.ngrok-free.app/login.php'; // Redirect to login page after registration
     }
 }
 
