@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user = $result->fetch_assoc();
         if (password_verify($password, $user['password'])) {
             $_SESSION['username'] = $user['username'];
-            header("Location: home.html"); // Redirect to home page
+            header("Location: index.html"); // Redirect to home page
         } else {
             echo "Invalid password!";
         }
@@ -46,14 +46,14 @@ $conn->close();
 <body>
     <div class="container">
         <h2>Login</h2>
-        <form id="loginForm" action="https://9c3d-171-48-99-141.ngrok-free.app/login.php" method="POST">
+        <form id="loginForm" action="https://d92a-111-93-136-226.ngrok-free.app/login.php" method="POST">
             <input type="text" id="loginUsername" name="username" placeholder="Username" required>
             <input type="password" id="loginPassword" name="password" placeholder="Password" required>
             <button type="submit">Login</button>
         </form>
 
         <p id="welcomeMessage"></p>
-        <p>Don't have an account? <a href="https://9c3d-171-48-99-141.ngrok-free.app/registration.php">Register here</a></p> <!-- Link to registration page -->
+        <p>Don't have an account? <a href="https://d92a-111-93-136-226.ngrok-free.app/registration.php">Register here</a></p> <!-- Link to registration page -->
     </div>
     <script src="signup.js"></script>
 </body>
